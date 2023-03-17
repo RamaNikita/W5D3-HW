@@ -59,9 +59,21 @@ nweEl.textContent = "Sydney"
 paRace.appendChild(nweEl)
 
   // Part 7
+/*Create a new .blog-postcorresponding to the new city added in Part 6. You will have to create a new <div>with class of .blog-post, a new <h2>with text, and a new <p>with some text. Think about what order you want to create the elements, and what order you want to append them in.
+ */
+const newDiv = document.createElement('div')
+newDiv.classList.add('blog-post','purple')
+const nweH2 = document.createElement('h2')
+nweH2.textContent = "Sydney"
+nweH2.style.color = 'white'
+const newP = document.createElement('p')
+newP.textContent = "I JUMPED MY CAR ACROSS THE HARBOUR BRIDGE"
+newDiv.appendChild(nweH2)
+newDiv.appendChild(newP)
+let newM = document.querySelector('.main')
+newM.appendChild(newDiv)
 
-
-  // Part 8
+// Part 8
 
 
   // Part 9
