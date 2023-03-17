@@ -35,7 +35,12 @@ for(let a of spTitle){
 
 
   // Part 5
-
+const paRace = this.getElementById('past-races')
+for(let p of paRace.children){
+  if(p.textContent==="Chicago"){
+    p.textContent=""
+  }
+}
 
   // Part 6
 
