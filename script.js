@@ -17,14 +17,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // Do all of your work inside the document.addEventListener  
 
   // Part 1
-
+const mainTitle = this.getElementById('main-title')
+mainTitle.textContent = "Dom Toretto.Welcome"
 
   // Part 2
 const body = this.querySelector('body')
 body.style.backgroundColor = '#B8D4E9'
 
   // Part 3
-
 
   // Part 4
 
