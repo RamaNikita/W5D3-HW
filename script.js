@@ -28,6 +28,10 @@ body.style.backgroundColor = '#B8D4E9'
   const fav = this.getElementById('favorite-things')
   fav.removeChild(fav.lastElementChild)
   // Part 4
+const spTitle = this.querySelectorAll(".special-title")
+for(let a of spTitle){
+  a.style.fontSize = '2rem'
+}
 
 
   // Part 5
