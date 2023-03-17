@@ -20,7 +20,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
   // Part 2
-
+const body = this.querySelector('body')
+body.style.backgroundColor = '#B8D4E9'
 
   // Part 3
 
