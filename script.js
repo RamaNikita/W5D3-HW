@@ -73,12 +73,20 @@ newDiv.appendChild(newP)
 let newM = document.querySelector('.main')
 newM.appendChild(newDiv)
 
+//Event Handlers
 // Part 8
-
-
+/**When you reload the page, the script.jsfile loads a random DOM quote. Let's play with the included function:
+ * Query select the #quote-title ID element and add a click event handler. That event handler should use the function randomQuote whenever #quote-titleis clicked
+ */
+// const randomQuote = function() {
+//   document.querySelector('#quote-of-the-day').innerText = `"${quotes[Math.floor(Math.random() * quotes.length)]}"`;
+// };
+const qTitle = document.querySelector('#quote-title')
+qTitle.addEventListener('click',randomQuote)
   // Part 9
+/**
+ * Select all .blog-post class elements. Iterate through the list of .blog-post class elements and apply two event handlers to each node. The first event handler should be listening for mouseoutevents while the second handler should be listening for mouseenterevents.
+The mouseouthandler should toggle the class .purple
+The mouseenterhandler should toggle the class .red
+ */
 
-
-
-
-});
