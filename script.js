@@ -90,3 +90,20 @@ The mouseouthandler should toggle the class .purple
 The mouseenterhandler should toggle the class .red
  */
 
+const newPost = document.querySelectorAll('.blog-post')
+for (let i of newPost){
+i.addEventListener('mouseout',function(ele){
+  if(i!==ele.target){
+    return
+  }
+  ele.target.classList.toggle('purple')
+  
+})
+i.addEventListener('mouseenter',function(e){
+  if(i!==e.target){
+    return
+  }
+  e.target.classList.toggle('red')
+})
+}
+});
