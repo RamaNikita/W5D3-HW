@@ -25,7 +25,8 @@ const body = this.querySelector('body')
 body.style.backgroundColor = '#B8D4E9'
 
   // Part 3
-
+  const fav = this.getElementById('favorite-things')
+  fav.removeChild(fav.lastElementChild)
   // Part 4
 
 
