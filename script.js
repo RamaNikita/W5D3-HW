@@ -17,17 +17,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // Do all of your work inside the document.addEventListener  
 
   // Part 1
+  /* DOM's personal website title is a bit wordy. Write a JavaScript statement that selects the #main-titleID element. Remember there are a couple of ways to query id. Change the text of the title to something shorter.
+   */
 const mainTitle = this.getElementById('main-title')
 mainTitle.textContent = "Dom Toretto.Welcome"
 
   // Part 2
+  /*Select the bodyand change the background-color to a new color of your choice.
+   */
 const body = this.querySelector('body')
 body.style.backgroundColor = '#B8D4E9'
 
   // Part 3
+  /*Select DOM's Favorite Things list and remove the last list item. */
   const fav = this.getElementById('favorite-things')
   fav.removeChild(fav.lastElementChild)
   // Part 4
+  /* Select all .special-titleclass elements and change their font-sizeto 2rem. Remember you might have to iterate through the list of elements
+   */
 const spTitle = this.querySelectorAll(".special-title")
 for(let a of spTitle){
   a.style.fontSize = '2rem'
@@ -35,15 +42,21 @@ for(let a of spTitle){
 
 
   // Part 5
+  /*Turns out DOM never raced in Chicago. Access the Past Races list and remove Chicago.
+   */
 const paRace = this.getElementById('past-races')
 for(let p of paRace.children){
   if(p.textContent==="Chicago"){
     p.textContent=""
   }
 }
-
+//Creating New DOM Elements
   // Part 6
-
+/*Let's add to DOM's Past Races list. Create a new <li>element, change the new <li>text to the name of a city, and append it to the Past Races list.
+ */
+const nweEl = document.createElement('li')
+nweEl.textContent = "Sydney"
+paRace.appendChild(nweEl)
 
   // Part 7
 
